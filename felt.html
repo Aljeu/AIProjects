@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Website</title>
+  <link rel="stylesheet" href="feltcss.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="space">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="https://www.linkedin.com/in/aljhoneagnas">LinkedIn</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1>Say Hello to FELT!</h1>
+      <p>Your journey starts here</p>
+      <a href="#contact" class="cta-button">Contact Us</a>
+    </div>
+  </header>
+
+<!--Felt Chatbot-->
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="my-project-2-443115"
+  agent-id="b3db9b4c-0f43-4744-93b1-90a0cdbcab1d"
+  language-code="en"
+  max-query-length="-1"
+  allow-feedback="all">
+  <df-messenger-chat-bubble
+   chat-title="Chat with FELT">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Arial;
+    --df-messenger-chat-background: #FFFFFF;
+    --df-messenger-message-user-background: #31ea27;
+    --df-messenger-message-bot-background: #DDDDDD;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a modern, innovative company dedicated to delivering excellence.</p>
+    <p>Our team focuses on user experience, creative solutions, and building long-lasting relationships.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Modern Website. All rights reserved.</p>
+  </footer>
+
+  <script src="feltjs.js"></script>
+</body>
+</html>
